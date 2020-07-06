@@ -47,7 +47,7 @@ open class YQCell: YQLineView {
     }
     
     
-    override init() {
+    override public init() {
         super.init()
     }
     
