@@ -9,7 +9,7 @@
 import UIKit
 import YQLineView
 
-enum YQCellAccessoryType: Int {
+public enum YQCellAccessoryType: Int {
     case none
     case detail
 }
@@ -20,7 +20,7 @@ open class YQCell: YQLineView {
     private let accessoryHeight: CGFloat = 14
     private let margin: CGFloat = 15
     
-    var accessoryType: YQCellAccessoryType = .detail {
+    public var accessoryType: YQCellAccessoryType = .detail {
         didSet {
             setNeedsDisplay()
         }
@@ -30,7 +30,7 @@ open class YQCell: YQLineView {
         return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: margin + accessoryWidth)
     }
     
-    var preferredAreaInsets: UIEdgeInsets {
+    public var preferredAreaInsets: UIEdgeInsets {
         switch accessoryType {
         case .detail:
             return safeAreaInsets
