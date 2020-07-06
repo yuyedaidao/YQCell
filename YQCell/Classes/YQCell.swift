@@ -14,7 +14,7 @@ enum YQCellAccessoryType: Int {
     case detail
 }
 
-class YQCell: YQLineView {
+open class YQCell: YQLineView {
 
     private let accessoryWidth: CGFloat = 7
     private let accessoryHeight: CGFloat = 14
@@ -26,7 +26,7 @@ class YQCell: YQLineView {
         }
     }
     
-    override var safeAreaInsets: UIEdgeInsets {
+    open override var safeAreaInsets: UIEdgeInsets {
         return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: margin + accessoryWidth)
     }
     
@@ -39,7 +39,7 @@ class YQCell: YQLineView {
         }
     }
     
-    override func safeAreaInsetsDidChange() {
+    open override func safeAreaInsetsDidChange() {
         if #available(iOS 11.0, *) {
             super.safeAreaInsetsDidChange()
         }
@@ -51,11 +51,11 @@ class YQCell: YQLineView {
         super.init()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
-    override func draw(_ rect: CGRect) {
+    open override func draw(_ rect: CGRect) {
         super.draw(rect)
         guard let context = UIGraphicsGetCurrentContext() else {return}
         switch accessoryType {
