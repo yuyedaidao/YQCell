@@ -1,0 +1,24 @@
+PODS:
+  - YQCell (0.1.0):
+    - YQLineView
+  - YQLineView (0.1.0)
+
+DEPENDENCIES:
+  - YQCell (from `../`)
+  - YQLineView
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - YQLineView
+
+EXTERNAL SOURCES:
+  YQCell:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YQCell: b11aef97818a12d8f4d8f1e1a46758f1c65d6fac
+  YQLineView: cab869fbe359835a5783eb7d3e4f45db52115493
+
+PODFILE CHECKSUM: b83895639d77855e5cb5ac8cc315b61efaca7321
+
+COCOAPODS: 1.9.3

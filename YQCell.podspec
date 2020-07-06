@@ -17,13 +17,13 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = '畅媒未来版公共模块-YQCell'
+  s.description      = 'Swift版模仿UITableViewCell-YQCell'
 
-  s.homepage         = 'https://github.com/iqilu/YQCell'
+  s.homepage         = 'https://github.com/yuyedaidao/YQCell'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'wyqpadding@gmail.com' => 'wyqpadding@gmail.com' }
-  s.source           = { :git => 'https://github.com/iqilu/YQCell.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/yuyedaidao/YQCell.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
@@ -41,4 +41,5 @@ Pod::Spec.new do |s|
   # s.dependency 'SnapKit', '~> 4.0.0'
   # s.dependency 'RxCoreData', '~> 0.5.1'
   # s.dependency 'RxDataSources', '~> 3.0'
+  s.dependency 'YQLineView'
 end

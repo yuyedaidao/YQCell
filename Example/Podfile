@@ -12,6 +12,8 @@ target 'YQCell_Example' do
   #pod 'RxCoreData', '~> 0.5.1'
   #pod 'RxDataSources', '~> 3.0'
 
+  pod 'YQLineView'
+  
   target 'YQCell_Tests' do
     inherit! :search_paths
 
