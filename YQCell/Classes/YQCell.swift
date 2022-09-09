@@ -63,7 +63,7 @@ open class YQCell: YQLineView {
             context.move(to: CGPoint(x: rect.maxX - margin - accessoryWidth, y: rect.midY - accessoryHeight / 2))
             context.addLine(to: CGPoint(x: rect.maxX - margin, y: rect.midY))
             context.addLine(to: CGPoint(x: rect.maxX - margin - accessoryWidth, y: rect.midY + accessoryHeight / 2))
-            context.setLineWidth(2)
+            context.setLineWidth(1)
             context.setStrokeColor((color ?? UIColor.gray).cgColor)
             context.strokePath()
         default:
